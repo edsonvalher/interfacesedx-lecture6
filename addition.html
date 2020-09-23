@@ -6,6 +6,16 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
     <title>Score React</title>
+    <style>
+        #app {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        #problem {
+            font-size: 72px;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,7 +36,7 @@
             render() {
                 return (
                     <div>
-                        <div>{this.state.num1} + {this.state.num2} </div>
+                        <div id="problem">{this.state.num1} + {this.state.num2} </div>
                         <input onKeyPress={this.inputKeyPress} onChange={this.updateResponse} value={this.state.response} />
                         <div>Score: {this.state.score}</div>
                         <div>You have typed: {this.state.response}</div>
