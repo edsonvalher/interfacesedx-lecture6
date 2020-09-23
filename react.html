@@ -15,7 +15,17 @@
         class App extends React.Component {
             render() {
                 return (
-                    <div>Hello</div>
+                    <div>
+                        <Hello />
+                        <Hello />
+                    </div>
+                );
+            }
+        }
+        class Hello extends React.Component {
+            render() {
+                return (
+                    <h1>Hello</h1>
                 );
             }
         }
